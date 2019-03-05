@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "name": "seonyoung-blog",
+  "builds": [
+    {
+      "src": "next.config.js",
+      "use": "@now/next"
+    }
+  ],
+  "alias": "seonyoung-blog.now.sh"
+}
