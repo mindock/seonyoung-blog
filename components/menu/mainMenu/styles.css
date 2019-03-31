@@ -1,0 +1,20 @@
+.container {
+  cursor: pointer;
+}
+
+.container img {
+  width: 20px;
+  height: 20px;
+}
+
+.mainMenu {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.subMenu {
+  padding-left: 30px;
+  font-weight: 400px;
+  font-size: 17px;
+}

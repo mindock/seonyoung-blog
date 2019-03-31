@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@zeit/next-css": "^1.0.1",
     "@zeit/next-typescript": "^1.1.1",
     "firebase": "^5.8.4",
     "next": "^8.0.3",
@@ -31,6 +32,10 @@
     "@types/react-dom": "^16.8.2",
     "fork-ts-checker-webpack-plugin": "^0.5.2",
     "prettier": "^1.16.4",
+    "tslint": "^5.14.0",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-config-standard": "^8.0.1",
+    "tslint-react": "^3.6.0",
     "typescript": "^3.3.3333"
   }
 }
