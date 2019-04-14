@@ -5,10 +5,12 @@
   "dependencies": {
     "@zeit/next-css": "^1.0.1",
     "@zeit/next-typescript": "^1.1.1",
+    "draft-js": "^0.10.5",
     "firebase": "^5.8.4",
     "next": "^8.0.3",
     "react": "^16.8.3",
     "react-dom": "^16.8.3",
+    "react-draft-wysiwyg": "^1.13.2",
     "react-scripts": "2.1.5"
   },
   "scripts": {
@@ -30,7 +32,9 @@
     "@types/next": "^8.0.1",
     "@types/react": "^16.8.5",
     "@types/react-dom": "^16.8.2",
+    "@types/react-draft-wysiwyg": "^1.12.2",
     "fork-ts-checker-webpack-plugin": "^0.5.2",
+    "postcss-import": "^12.0.1",
     "prettier": "^1.16.4",
     "tslint": "^5.14.0",
     "tslint-config-prettier": "^1.18.0",

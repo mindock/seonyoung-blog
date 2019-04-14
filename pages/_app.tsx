@@ -1,6 +1,7 @@
 import App, { Container } from 'next/app';
 import React from 'react';
 import SideBar from '../components/menu/sideBar';
+import styles from '../styles/app.css';
 
 /* 
 헤더, 푸터와 같이 프로젝트 전체에서 공통으로 사용하는 레이아웃을 정의한다.
@@ -22,8 +23,10 @@ class MyApp extends App {
     const { Component, pageProps } = this.props;
     return (
       <Container>
-        <SideBar />
-        <Component {...pageProps} />
+        <div className={styles.flexBox}>
+          <SideBar />
+          <Component {...pageProps} />
+        </div>
       </Container>
     );
   }
