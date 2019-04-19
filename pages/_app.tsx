@@ -23,6 +23,7 @@ class MyApp extends App {
     const { Component, pageProps } = this.props;
     return (
       <Container>
+        <link rel="stylesheet" href="/static/css/react-draft-wysiwyg.css" />
         <div className={styles.flexBox}>
           <SideBar />
           <Component {...pageProps} />
