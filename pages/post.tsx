@@ -2,6 +2,7 @@ import React from 'react';
 import { NextFC } from 'next';
 import dynamic from 'next/dynamic';
 import styles from '../styles/post.css';
+import 'react-draft-wysiwyg/dist/react-draft-wysiwyg.css';
 
 // dynamic import
 const MarkdownEditor = dynamic(() => import('../components/editor'), {
