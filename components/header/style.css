@@ -1,0 +1,18 @@
+.loginContainer {
+  text-align: right;
+}
+
+#loginUser {
+  font-weight: bold;
+}
+
+.loginContainer button {
+  border: 2px solid #e7e7e7;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+.loginContainer button:hover {
+  background-color: white;
+  color: black;
+}
