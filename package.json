@@ -5,6 +5,7 @@
   "dependencies": {
     "@zeit/next-css": "^1.0.1",
     "@zeit/next-typescript": "^1.1.1",
+    "@zeit/webpack-asset-relocator-loader": "^0.4.5",
     "draft-js": "^0.10.5",
     "firebase": "^5.10.1",
     "mobx": "^5.9.4",
