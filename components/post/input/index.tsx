@@ -22,8 +22,9 @@ const InputPost: React.FC<{ category: EN_MAIN_CATEGORY; subCategory: EN_SUB_CATE
 
   const submitForm = async () => {
     postStore.setCategories(category, subCategory);
+    postStore;
     const submitedPost = await postStore.submit();
-    location.href = `./posts/${submitedPost.id}`;
+    location.href = `/posts/${submitedPost.id}`;
   };
 
   return (

@@ -1,0 +1,24 @@
+.postSummary {
+  width: inherit;
+}
+
+.title {
+  width: 70%;
+  font-size: 20px;
+  display: inline-block;
+}
+
+.title a {
+  text-decoration: none;
+  color: black;
+}
+
+.title a:hover {
+  text-decoration: none;
+  color: mediumaquamarine;
+}
+
+.created {
+  width: 30%;
+  display: inline-block;
+}

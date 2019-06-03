@@ -10,5 +10,11 @@
       }
     }
   ],
-  "alias": "seonyoung-blog.com"
+  "alias": "seonyoung-blog.com",
+  "routes": [
+    {
+      "src": "/posts/(?<id>[^/]+)",
+      "dest": "/content?id=$id"
+    }
+  ]
 }
