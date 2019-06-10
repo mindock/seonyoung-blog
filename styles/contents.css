@@ -1,0 +1,9 @@
+#writeButton {
+  text-decoration: none;
+  color: black;
+}
+
+#writeButton:hover {
+  text-decoration: none;
+  color: gray;
+}

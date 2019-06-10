@@ -6,6 +6,8 @@ import { EN_SUB_CATEGORY } from '../models/category/EN_SUB_CATEGORY';
 import PostSummaryBox from '../components/post/category/summaryBox';
 import { PostFirebaseModel } from '../models/post/PostFirebaseModel';
 import { AuthStoreContext } from '../stores/auth';
+import { observer } from 'mobx-react-lite';
+import styles from '../styles/contents.css';
 
 interface ContentsProps {
   posts: PostFirebaseModel[];
@@ -15,7 +17,11 @@ const Contents: NextFC<ContentsProps> = ({ posts }) => {
   const authStore = useContext(AuthStoreContext);
 
   const showWriteButton = () => {
-    return authStore.isAdmin ? <a href="/post"> 글쓰기 </a> : null;
+    return authStore.isAdmin ? (
+      <a id={styles.writeButton} href="/post">
+        글쓰기
+      </a>
+    ) : null;
   };
 
   return (
@@ -36,4 +42,4 @@ Contents.getInitialProps = async ({ query }) => {
   return { posts };
 };
 
-export default Contents;
+export default observer(Contents);
