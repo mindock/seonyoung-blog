@@ -10,15 +10,17 @@ import { observer } from 'mobx-react-lite';
 import styles from '../styles/contents.css';
 
 interface ContentsProps {
+  category: EN_MAIN_CATEGORY;
+  subCategory: EN_SUB_CATEGORY;
   posts: PostFirebaseModel[];
 }
 
-const Contents: NextFC<ContentsProps> = ({ posts }) => {
+const Contents: NextFC<ContentsProps> = ({ category, subCategory, posts }) => {
   const authStore = useContext(AuthStoreContext);
 
   const showWriteButton = () => {
     return authStore.isAdmin ? (
-      <a id={styles.writeButton} href="/post">
+      <a id={styles.writeButton} href={`/post?category=${category}&subCategory=${subCategory}`}>
         글쓰기
       </a>
     ) : null;
@@ -39,7 +41,7 @@ Contents.getInitialProps = async ({ query }) => {
 
   const posts = await getPostByCategory({ mainCategory, subCategory });
 
-  return { posts };
+  return { category: mainCategory, subCategory, posts };
 };
 
 export default observer(Contents);

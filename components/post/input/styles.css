@@ -1,0 +1,23 @@
+.inputPostForm {
+  margin-top: 10px;
+  margin-left: 30px;
+  width: 90%;
+  height: 100%;
+}
+
+.titleContainer {
+  margin-bottom: 20px;
+}
+
+.titleContainer input {
+  font-size: 20px;
+  width: 60%;
+}
+
+.editorContainer {
+  height: 88.5%;
+}
+
+.buttonContainer {
+  margin-top: 20px;
+}
