@@ -1,0 +1,20 @@
+.contentContainer {
+  margin-top: 20px;
+  margin-left: 50px;
+  width: 60%;
+}
+
+.category {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+
+.category:hover {
+  text-decoration: none;
+  color: mediumaquamarine;
+}
+
+.dateContainer {
+  text-align: right;
+}
