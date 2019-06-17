@@ -3,8 +3,9 @@ import styles from './styles.css';
 import { PostFirebaseModel } from '../../../../models/post/PostFirebaseModel';
 
 export function getDateString(second: number): string {
+  const formatter = new Intl.DateTimeFormat('ko');
   const secondToDate: Date = new Date(second * 1000);
-  const dateString = secondToDate.toISOString().slice(0, 10);
+  const dateString = formatter.format(secondToDate);
 
   return dateString;
 }
