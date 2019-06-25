@@ -1,13 +1,8 @@
-import React from 'react';
-import { NextFC } from 'next';
+import React, { useState } from 'react';
 import { StoreModel } from '../../../models/store/StoreModel';
 
-const RandomLunchMenu: NextFC<StoreModel[]> = stores => {
-  const storeArr = Object.values(stores);
-  const randomNumber = Math.floor(Math.random() * storeArr.length);
-  const selected = stores[randomNumber];
-
-  return <b>{selected.name}</b>;
+const RandomLunchMenu: React.FC<StoreModel> = store => {
+  return <b>{store.name}</b>;
 };
 
 export default RandomLunchMenu;
