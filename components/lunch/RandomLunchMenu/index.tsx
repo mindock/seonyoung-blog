@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { StoreModel } from '../../../models/store/StoreModel';
 
 const RandomLunchMenu: React.FC<StoreModel> = store => {

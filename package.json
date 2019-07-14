@@ -6,6 +6,7 @@
     "@zeit/next-css": "^1.0.1",
     "@zeit/next-typescript": "^1.1.1",
     "@zeit/webpack-asset-relocator-loader": "^0.4.5",
+    "antd": "^3.20.1",
     "draft-js": "^0.10.5",
     "draftjs-to-html": "^0.8.4",
     "firebase": "^5.10.1",
