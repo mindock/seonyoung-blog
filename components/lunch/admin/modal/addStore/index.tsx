@@ -1,9 +1,10 @@
 import React from 'react';
 import { Modal } from 'antd';
 import 'antd/dist/antd.css';
-import { EN_STORE_CATEGORY } from '../../../../models/store/EN_STORE_CATEGORY';
-import { addStore } from '../../../../lib/firebase/storeStorage';
-import { StoreModel } from '../../../../models/store/StoreModel';
+import { EN_STORE_CATEGORY } from '../../../../../models/store/EN_STORE_CATEGORY';
+import { addStore } from '../../../../../lib/firebase/storeStorage';
+import { StoreModel } from '../../../../../models/store/StoreModel';
+import styles from './styles.css';
 
 class AddStoreModal extends React.Component<any, { visible: boolean; data: StoreModel }> {
   constructor(props: any) {
@@ -48,7 +49,7 @@ class AddStoreModal extends React.Component<any, { visible: boolean; data: Store
     return (
       <>
         <Modal title="가게 추가" visible={this.state.visible} onOk={this.ok} onCancel={this.close}>
-          <select onChange={this.setCategory}>
+          <select className={styles.category} onChange={this.setCategory}>
             <option>{EN_STORE_CATEGORY.KOREAN}</option>
             <option>{EN_STORE_CATEGORY.CHINESE}</option>
             <option>{EN_STORE_CATEGORY.JAPANESE}</option>
@@ -57,7 +58,7 @@ class AddStoreModal extends React.Component<any, { visible: boolean; data: Store
             <option>{EN_STORE_CATEGORY.FASTFOOD}</option>
             <option>{EN_STORE_CATEGORY.CAFE}</option>
           </select>
-          <input placeholder="가게이름" onChange={this.setName} />
+          <input className={styles.nameInput} placeholder="가게이름" onChange={this.setName} />
         </Modal>
         <button onClick={this.open}>가게추가</button>
       </>
