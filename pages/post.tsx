@@ -1,7 +1,7 @@
 import React from 'react';
 import { NextFC } from 'next';
 import styles from '../styles/post.css';
-import InputPost from '../components/post/input';
+import InputPost from '../components/blog/post/input';
 import { EN_MAIN_CATEGORY } from '../models/category/EN_MAIN_CATEGORY';
 import { EN_SUB_CATEGORY } from '../models/category/EN_SUB_CATEGORY';
 

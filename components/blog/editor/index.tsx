@@ -1,7 +1,7 @@
 import React from 'react';
 import { EditorState, convertToRaw } from 'draft-js';
 import { Editor } from 'react-draft-wysiwyg';
-import { PostStore } from '../../stores/post';
+import { PostStore } from '../../../stores/post';
 
 class MarkdownEditor extends React.Component<{ postStore: PostStore }, { editorState: EditorState }> {
   constructor(props: { postStore: PostStore }) {

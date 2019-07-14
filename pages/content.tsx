@@ -1,7 +1,7 @@
 import { NextFC } from 'next';
 import { getPost } from '../lib/firebase/postStorage';
 import { PostFirebaseModel } from '../models/post/PostFirebaseModel';
-import ContentBody from '../components/post/contentBody';
+import ContentBody from '../components/blog/post/contentBody';
 
 interface ContentProps {
   post: PostFirebaseModel;

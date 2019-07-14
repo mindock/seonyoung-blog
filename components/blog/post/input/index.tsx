@@ -1,9 +1,9 @@
 import React, { useContext } from 'react';
-import { PostStoreContext } from '../../../stores/post';
+import { PostStoreContext } from '../../../../stores/post';
 import dynamic from 'next/dynamic';
 import 'react-draft-wysiwyg/dist/react-draft-wysiwyg.css';
-import { EN_MAIN_CATEGORY } from '../../../models/category/EN_MAIN_CATEGORY';
-import { EN_SUB_CATEGORY } from '../../../models/category/EN_SUB_CATEGORY';
+import { EN_MAIN_CATEGORY } from '../../../../models/category/EN_MAIN_CATEGORY';
+import { EN_SUB_CATEGORY } from '../../../../models/category/EN_SUB_CATEGORY';
 import styles from './styles.css';
 
 // dynamic import

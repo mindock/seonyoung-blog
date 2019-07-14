@@ -2,7 +2,7 @@ import React from 'react';
 import { NextFC } from 'next';
 import { getDateString } from '../category/summary';
 import draftToHtml from 'draftjs-to-html';
-import { PostFirebaseModel } from '../../../models/post/PostFirebaseModel';
+import { PostFirebaseModel } from '../../../../models/post/PostFirebaseModel';
 import styles from './styles.css';
 
 const ContentBody: NextFC<PostFirebaseModel> = post => {

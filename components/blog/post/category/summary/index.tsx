@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './styles.css';
-import { PostFirebaseModel } from '../../../../models/post/PostFirebaseModel';
+import { PostFirebaseModel } from '../../../../../models/post/PostFirebaseModel';
 
 export function getDateString(second: number): string {
   const formatter = new Intl.DateTimeFormat('ko');

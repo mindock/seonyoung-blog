@@ -3,7 +3,7 @@ import { NextFC } from 'next';
 import { getPostByCategory } from '../lib/firebase/postStorage';
 import { EN_MAIN_CATEGORY } from '../models/category/EN_MAIN_CATEGORY';
 import { EN_SUB_CATEGORY } from '../models/category/EN_SUB_CATEGORY';
-import PostSummaryBox from '../components/post/category/summaryBox';
+import PostSummaryBox from '../components/blog/post/category/summaryBox';
 import { PostFirebaseModel } from '../models/post/PostFirebaseModel';
 import { AuthStoreContext } from '../stores/auth';
 import { observer } from 'mobx-react-lite';
