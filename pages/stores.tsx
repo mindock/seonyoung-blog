@@ -6,7 +6,7 @@ import AddStoreModal from '../components/lunch/admin/modal/addStore';
 import { getStores } from '../lib/firebase/storeStorage';
 import PageStore from '../components/lunch/admin/pageStore';
 
-export interface storeProps {
+interface storeProps {
   stores: StoreModel[];
 }
 

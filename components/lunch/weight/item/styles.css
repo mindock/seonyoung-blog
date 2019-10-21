@@ -1,0 +1,14 @@
+.postSummary {
+  width: inherit;
+}
+
+.storeName {
+  width: 70%;
+  font-size: 20px;
+  display: inline-block;
+}
+
+.storeInput {
+  width: 30%;
+  display: inline-block;
+}
