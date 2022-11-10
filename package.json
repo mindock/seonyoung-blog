@@ -41,7 +41,7 @@
     "@types/react-dom": "^16.8.2",
     "@types/react-draft-wysiwyg": "^1.12.2",
     "fork-ts-checker-webpack-plugin": "^0.5.2",
-    "loader-utils": "^1.2.3",
+    "loader-utils": "^1.4.1",
     "postcss-import": "^12.0.1",
     "prettier": "^1.16.4",
     "tslint": "^5.14.0",
